@@ -1,0 +1,9 @@
+<div  role="alert" [ngClass]="setClasses()">
+    <template *ngIf="todo.completed" >
+
+    </template>
+    <input type="checkbox" (change)="onToggle(todo)">
+
+        {{todo.title}}
+    <button class="btn btn-danger text-left btn-small" (click)="onDelete(todo)">Delete</button>
+  </div>
